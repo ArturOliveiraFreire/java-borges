@@ -21,6 +21,6 @@ else if (valor > 200) {
 }
 
 else {
-    console.log("Valor total:" , valor)
+    console.log("Valor total:" , valor.toFixed(2))
 }
 
