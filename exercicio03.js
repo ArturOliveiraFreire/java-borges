@@ -2,4 +2,10 @@
 
 let number = window.prompt("Insira um numero")
 
-if (number)
+if (number % 2 == 0) {
+    console.log("Ele é PAR")
+}
+
+else {
+    console.log("Ele é IMPAR")
+}
