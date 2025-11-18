@@ -15,26 +15,28 @@ let altura = Number.parseFloat(prompt("Informe sua altura em metros"))
 
 let imc = peso / (altura * altura)
 
+console.log("Seu IMC é: " , imc.toFixed(2))
+
 if (imc < 18.5) {
-    console.log("Abaixo do peso")
+    console.log("Sua Classifição: Abaixo do peso")
 }
 
 else if (imc >= 18.5 && imc <=24.9) {
-    console.log("Peso normal")
+    console.log("Sua Classifição: Peso normal")
 }
 
 else if (imc >= 25 && imc <=29.9) {
-    console.log("Sobre peso")
+    console.log("Sua Classifição: obre peso")
 }
 
 else if (imc >= 30 && imc <=34.9) {
-    console.log("Obsidade grau 1")
+    console.log(" Sua Classifição:Obsidade grau 1")
 }
 
 else if (imc >= 35 && imc <=39.9) {
-    console.log("Obsidade grau 2")
+    console.log(" Sua Classifição: Obsidade grau 2")
 }
 
 else if (imc > 40) {
-    console.log("Obsidade grau 3")
+    console.log("Sua Classifição: Obsidade grau 3")
 }
