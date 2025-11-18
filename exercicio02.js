@@ -1,4 +1,4 @@
-// Transformação de numero em dia da semana correspondente
+// Transformação de numero em dia da semana correspondete
 
 
 let number = window.prompt("Digite um numero de 1 a 7")

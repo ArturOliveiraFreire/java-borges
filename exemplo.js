@@ -36,7 +36,6 @@
 // let resultado = numero1 + numero2
 
 
-
 //Int = Numero Inteiro
 
 // let numero1 = Number.parseInt(prompt("DIgite o primeiro número: "))
