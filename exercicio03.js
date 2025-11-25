@@ -1,11 +1,8 @@
-// Verificação de numero par ou impar
+// // Faça um programa que imprima na tela a tabuada de um número
+// qualquer escolhido pelo usuário até o 10.
 
-let number = window.prompt("Insira um numero")
+let n = parseInt(prompt("Escolha um numero"))
 
-if (number % 2 == 0) {
-    console.log("Ele é PAR")
-}
-
-else {
-    console.log("Ele é IMPAR")
+for (let m = n ; (m / n) <= 10 ; m += n ) {
+    console.log(n , "*" , (m/n) , "=" , m )
 }

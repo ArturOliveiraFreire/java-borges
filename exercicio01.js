@@ -1,16 +1,5 @@
-// VErifica;áo de login
+// Imprimir números de 1 a 10 utilizando o loop for
 
-
-let user = window.prompt("Insira nome de usuario")
-
-let passworld = window.prompt("Insira sua senha")
-
-if (user == "admin" && passworld == "senha123") {
-    console.log("Tudo certo parça")
+for (let n = 1 ; n <= 10 ; n++) {
+    console.log("Valor: " , n)
 }
-
-else {
-    console.log("Algo errado")
-}
-
-
