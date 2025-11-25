@@ -5,5 +5,5 @@ let n = 0
 
 do{
     console.log("Valor: " , n)
-    n += 1
+    n += 2
 } while(n <= 20)
