@@ -105,7 +105,8 @@ function ordem() {
 
     else {
         console.log("Os numeros não estão em ordem crescente")
-    }}
+    }
+}
 
 // Função 6 -- Entra um ano e retorna se é ou não maior de idade
 function idade() {
@@ -122,7 +123,8 @@ function idade() {
     else {
         console.log("Você é menor de idade. VAZA!!!")
         console.log("Sua idade é: ", idade)
-    }}
+    }
+}
 
 // Função 7 -- Calcula desconto
 function desconto() {
@@ -142,7 +144,8 @@ function desconto() {
 
     else {
         console.log("Valor total:", valor.toFixed(2))
-    }}
+    }
+}
 
 // Função 8 -- Calcula IMC
 function imc() {
@@ -176,50 +179,113 @@ function imc() {
 
     else if (imc > 40) {
         console.log("Sua Classifição: Obsidade grau 3")
-    }}
+    }
+}
 
 
+// do {
+
+//     let selecionado = window.prompt("Digite o numero do exercicio: ")
+
+//     switch (selecionado) {
+//         case "1":
+//             Login();
+//             break;
+
+//         case "2":
+//             semana();
+//             break;
+
+//         case "3":
+//             parouimpar();
+//             break;
+
+//         case "4":
+//             notas();
+//             break;
+
+//         case "5":
+//             ordem();
+//             break;
+
+//         case "6":
+//             idade();
+//             break;
+
+//         case "7":
+//             desconto();
+//             break;
+
+//         case "8":
+//             imc();
+//             break;
+
+//     }
+
+// } while (selecionado !== "0");
+
+
+let opcao = 0;
+
+do {
+    opcao = parseInt(prompt(`
+    ============  🤠 MENU DE EXERCICIOS 🕴️  ============
     
-let selecionado = window.prompt("Digite o numero do exercicio: ")
+    Digite o número das opções: 
 
+    0 - Sair
+    1 - Login
+    2 - Dia da semana
+    3 - Par or impar
+    4 - Média do aluno
+    5 - Número crescente
+    6 - Idade
+    7 - calculo de desconto
+    8 - Calculo de IMC
 
-while (selecionado !== "0") {
+    =========================================================
+    `));
 
-    switch (selecionado) {
-        case "1":
+    switch (opcao) {
+        case 0:
+            alert("Volte sempre 😘");
+            break;
+
+        case 1:
             Login();
             break;
 
-        case "2":
+        case 2:
             semana();
             break;
 
-        case "3":
+        case 3:
             parouimpar();
             break;
 
-        case "4":
+        case 4:
             notas();
             break;
 
-        case "5":
+        case 5:
             ordem();
             break;
 
-        case "6":
+        case 6:
             idade();
             break;
 
-        case "7":
+        case 7:
             desconto();
             break;
 
-        case "8":
+        case 8:
             imc();
             break;
 
+        default:
+            alert(" 🤷‍♂️ Não entendi oque você digitou. tente escolher uma opção valida 👀");
+            break;
     }
 
-    selecionado = window.prompt("Digite o numero do exercicio: ")
-
-}
+} while (opcao !== 0);
