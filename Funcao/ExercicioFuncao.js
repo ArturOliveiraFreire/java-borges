@@ -183,48 +183,6 @@ function imc() {
 }
 
 
-// do {
-
-//     let selecionado = window.prompt("Digite o numero do exercicio: ")
-
-//     switch (selecionado) {
-//         case "1":
-//             Login();
-//             break;
-
-//         case "2":
-//             semana();
-//             break;
-
-//         case "3":
-//             parouimpar();
-//             break;
-
-//         case "4":
-//             notas();
-//             break;
-
-//         case "5":
-//             ordem();
-//             break;
-
-//         case "6":
-//             idade();
-//             break;
-
-//         case "7":
-//             desconto();
-//             break;
-
-//         case "8":
-//             imc();
-//             break;
-
-//     }
-
-// } while (selecionado !== "0");
-
-
 let opcao = 0;
 
 do {
