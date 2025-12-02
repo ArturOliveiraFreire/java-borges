@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+
+<body>
+
+    <!-- Exercício 02 -- Adicionar e remover itens de uma lista -->
+
+    <h1>Exercício 02</h1>
+
+    <ul id="minhalista">
+        <li>Item01</li>
+        <li>Item02</li>
+    </ul>
+
+
+    <button onclick="adicionaritem()">Adicionar Item</button>
+
+    <button onclick="removeritem()">Remover Item</button>
+
+</body>
+
+<script>
+
+    let n = 3
+
+    // função para adicionar um item
+    function adicionaritem() {
+
+        // Criar um novo elemento LI
+        let novoitem = document.createElement("li")
+
+        // Definir o texto do novo item (LI)
+        novoitem.textContent = "Item0" + String(n).padStart(0, '0')
+
+        // Identificar o iten no HTML
+        let lista = document.getElementById("minhalista")
+
+        // Adicionar o novo item a lista
+        lista.appendChild(novoitem)
+
+        n += 1
+    }
+
+    // Função para remover um item
+    function removeritem() {
+        // Identificar o elemento no HTML
+        let lista = document.getElementById("minhalista")
+
+        // Remover o ultimo item no HTML
+        if (lista.children.lenght > 0) {
+
+            // Remover o ultimo elemento da lista
+            lista.removeChild(lista.lastElementChild)
+
+        }
+    }
+
+
+</script>
+
+</html>
